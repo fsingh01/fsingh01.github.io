@@ -21,6 +21,7 @@
     .height1 {
       height: 100px;
     }
+
     .height2 {
       height: 500px;
     }
@@ -74,25 +75,54 @@
     })
   </script>
   <script type="text/javascript">
-  //alert("my JS!");
-  console.log("write to the console...");
-  function myfirstFunction(){ //function definition
-    //whatever is in these brackets will run when we call function
-    console.log("write from inside the function...");
-  }
-  myfirstFunction();
-  myfirstFunction();
-  myfirstFunction();
-  myfirstFunction();
+    //alert("my JS!");
+    console.log("write to the console...");
 
-  function myfunctionWithParameter(name){
+    function myfirstFunction() { //function definition
+      //whatever is in these brackets will run when we call function
+      console.log("write from inside the function...");
+    }
+    myfirstFunction();
+    myfirstFunction();
+    myfirstFunction();
+    myfirstFunction();
 
-    console.log("Hello"+name);
-  }
+    function myfunctionWithParameter(name) {
 
-  myfunctionWithParameter("Anderson");
-  myfunctionWithParameter(", how are you?");
-  //function call
+      console.log("Hello" + name);
+    }
+
+    myfunctionWithParameter("Anderson");
+    myfunctionWithParameter(", how are you?");
+    //function call
+
+    //boolean values
+    var myOnOff = true;
+    var isDaytime = false;
+    //number values
+    var salary = 100000;
+    var carPrice = 25000.25;
+    //text strings
+    var emailAddress = "gmail.com";
+    var sentence = 'The Judgment of Paris.';
+    var anotherSentence = "Anderson's class";
+
+    var salary1 = 100000;
+    var salary2 = "100000";
+
+    var taxes = 25000;
+
+    console.log("My take home pay is" + (salary1 - taxes));
+
+    console.log("a bunch of info : " + salary + "and" + carPrice + "and even more" + isDaytime);
+    var myConcatenation = "a bunch of info : " + salary + "and" + carPrice + "and even more" + isDaytime);
+    console.log(myConcatenation);
+
+    function writeToConsole(myString) {
+      console.log(myString);
+    }
+    writeToConsole(myConcatenation);
+    writeToConsole("3" + myConcatenation);
   </script>
 </body>
 

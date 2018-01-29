@@ -34,6 +34,18 @@
     }
     .flex{
       display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flexSpaceBetween{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .flexSpaceAround{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   </style>
 </head>
@@ -42,6 +54,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 height1 randomColor">
+        <img src="img/square1.jpg" class="fitHeightWidth" alt="square" >
       </div>
       <div class="col-md-3 height1 randomColor">
 
@@ -54,7 +67,10 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 height1 randomColor">
+      <div class="col-md-12 height1 flexSpaceAround">
+        <img src="img/square1.jpg" class="fitHeightWidth" alt="square" >
+        <img src="img/square1.jpg" class="fitHeightWidth" alt="square" >
+        <img src="img/square1.jpg" class="fitHeightWidth" alt="square" >
       </div>
 
     </div>

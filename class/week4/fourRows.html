@@ -19,11 +19,44 @@
     <![endif]-->
   <style media="screen">
     .height1 {
-      height: 120px;
+      height: 150px;
     }
 
     .height2 {
-      height: 220px;
+      height: 200px;
+    }
+
+    .height3 {
+      height: 100px;
+    }
+
+    .relativeParent {
+      position: relative;
+    }
+
+    .absoluteChild {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flexSpaceBetween {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flexSpaceAround {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
   </style>
 </head>
@@ -31,41 +64,40 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 height1 randomColor">
+      <div class="col-md-4 height1 randomColor">
       </div>
+      <div class="col-md-4 height1 randomColor">
 
+      </div>
+      <div class="col-md-4 height1 randomColor">
+
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12 height2 randomColor">
       </div>
-
     </div>
-    <div class="row">
-      <div class="col-md-3 height1 randomColor">
-      </div>
-      <div class="col-md-3 height1 randomColor">
-      </div>
-      <div class="col-md-3 height1 randomColor">
-      </div>
-      <div class="col-md-3 height1 randomColor">
-      </div>
 
-
-    </div>
     <div class="row">
-      <div class="col-md-3 height1 randomColor">
+      <div class="col-md-3 height3 randomColor">
       </div>
-      <div class="col-md-3 height1 randomColor">
+      <div class="col-md-3 height3 randomColor">
       </div>
-      <div class="col-md-3 height1 randomColor">
+      <div class="col-md-3 height3 randomColor">
       </div>
-      <div class="col-md-3 height1 randomColor">
+      <div class="col-md-3 height3 randomColor">
       </div>
 
     </div>
-    <div class="row">
 
-      <div class="col-md-12 height1 randomColor">
+    <div class="row">
+      <div class="col-md-6 height1 randomColor">
+
+      </div>
+      <div class="col-md-3 height1 randomColor">
+
+      </div>
+      <div class="col-md-3 height1 randomColor">
 
       </div>
     </div>

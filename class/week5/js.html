@@ -19,11 +19,11 @@
     <![endif]-->
     <style media="screen">
       .height1 {
-        height: 120px;
+        height: 75px;
       }
 
       .height2 {
-        height: 220px;
+        height: 600px;
       }
     </style>
 </head>
@@ -36,30 +36,18 @@
 
       </div>
       <div class="row">
-        <div class="col-md-12 height2 randomColor">
+        <div class="col-md-2 height2 randomColor">
         </div>
 
       </div>
       <div class="row">
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
+        <div class="col-md-8 height2 myConsole">
         </div>
 
 
       </div>
       <div class="row">
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
-        </div>
-        <div class="col-md-3 height1 randomColor">
+        <div class="col-md-2 height2 randomColor">
         </div>
 
       </div>
@@ -136,6 +124,16 @@
       }
       //output the full sentence
       console.log("the full sentence is "+fullSentence);
+
+      //$ means jQuery functions
+      //document is the entire html as a built in variable
+      //ready is an 'event'
+      //when the document is ready, execute the function
+      $(document).ready(function(){
+      //get the myConsole elements
+      //call the html functions//html function writes HTML
+        $(".myConsole").html("the full sentence is"+fullSentence);
+      });
   </script>
 </body>
 

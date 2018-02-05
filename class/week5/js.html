@@ -18,6 +18,9 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style media="screen">
+      .boldRed{
+        font-weight: bold;
+      }
       .height1 {
         height: 75px;
       }
@@ -134,6 +137,10 @@
       //call the html functions//html function writes HTML
       //what we give the html function is a parameter of html code
         $(".myConsole").html("the full sentence is"+fullSentence);
+
+        $(".myConsole").append("<h1 class='boldRed'>here is another sentence</h1>");
+
+        $(".myConsole").prepend("<div> class='boldRed'>Text before all</div>");
       });
   </script>
 </body>

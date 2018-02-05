@@ -78,21 +78,14 @@
     */
     var wordArray = ["this", "is", "suppose", "to", "be", "a", "sentence"];
 
-    console.log("wordArray " + wordArray);
-
-    console.log("the number of elements in wordArray: " + wordArray.length);
-    console.log("with some text in between: "+wordArray.join(";"));
-
-    var sum = 0;
-    for(var i=0;i<wordArray.length;i=i+1){
-      console.log("the current index is "+i);
-      console.log("the value at index "+i+" is "+wordArray[i]);
-
-      sum = sum + wordArray[i];
-      console.log("the current is sum is "+sum);
-    }
-
-    console.log("the average is "+ (sum/wordArray.length));
+      //declare empty string variable
+    var fullSentence="";
+    for(var j=0;j<wordArray.length;j=j+1){
+      //add each word
+      fullSentence = fullSentence + wordArray[j]+" ";
+      }
+      //output the full sentence
+      console.log("the full sentence is "+fullSentence);
   </script>
 </body>
 

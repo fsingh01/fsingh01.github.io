@@ -143,6 +143,23 @@
         $(".myConsole").prepend("<div> class='boldRed'>Text before all</div>");
       });
   </script>
+  <script type="text/javascript">
+      //when the document is loaded
+    $(document).ready(function() {
+      //this function gets a random color between 0 and 255
+      function getRandomColor() {
+        return Math.floor(Math.random() * 255);
+      }
+      //get all the elements (divs) with the class random color
+      var randomColor = $(".randomColor");
+      //loop through all elements
+      //for each element change the css background color to rgb + 3 random colors
+      $.each(randomColor, function(index, item) {
+        $(this).css("background-color", "RGB(" + getRandomColor() + "," + getRandomColor() + "," + getRandomColor() + ")");
+      })
+
+    })
+  </script>
 </body>
 
 </html>

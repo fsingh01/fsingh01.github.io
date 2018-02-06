@@ -27,25 +27,108 @@
     .height3{
       height: 150px;
     }
+
+    .flexSingleItem{/*center the child element*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flexSpaceAround{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .flexVertSpaceAround{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    ul li{
+      list-style: none;
+      text-transform: uppercase;
+    }
+
+    ul li a, ul li a:hover{
+      text-decoration: none;
+    }
+
+    .header{
+      line-height: 75px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-12 height1 randomColor">
+      <div class="col-md-12 height1 header">
+        <ul class="flexSpaceAround">
+          <li><a href="a">Media</a></li>
+          <li><a href="a">Docs</a></li>
+          <li><a href="a">Links</a></li>
+          <li><a href="a">About</a></li>
+        </ul>
 
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4 height2 randomColor">
+      <div class="col-md-4 height2 flexVertSpaceAround">
+        <img src="img/orange.png" alt="orange">
+        <img src="img/guava.png" alt="guava">
+        <img src="img/pineapple.png" alt="pineapple">
 
       </div>
-      <div class="col-md-8 height2 randomColor">
+      <div class="col-md-8 height2">
+
+        <div class="row">
+          <div class="col-md-6 height3 flexSingleItem">
+            <img src="img/drink1.png" alt="red/yellow drink">
+
+          </div>
+          <div class="col-md-6 height3 flexSingleItem">
+            <img src="img/drink2.png" alt="green drink">
+
+          </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/strawberry.png" alt="strawberries">
+
+        </div>
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/grapes.png" alt="grapes">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/pear.png" alt="pear">
+
+        </div>
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/watermelon.png" alt="bowl of watermelon">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/coconut.png" alt="coconut">
+
+        </div>
+        <div class="col-md-6 height3 flexSingleItem">
+          <img src="img/ice.png" alt="ice cubes">
+
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 height1 randomColor">
+      <div class="col-md-12 height1">
 
       </div>
     </div>

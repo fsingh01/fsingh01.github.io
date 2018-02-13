@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Holy Grail</title>
+  <title>tables</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -39,7 +39,33 @@
       <div class="col-md-2 height2 randomColor">
 
       </div>
-      <div class="col-md-8 height2 myConsole">
+      <div class="col-md-8 height2">
+<table class="table table-striped table-hover">
+  <tr>
+    <th>Position</th>
+    <th>Name</th>
+    <th>Games Played</th>
+    <th>Goals</th>
+    <th>Assists</th>
+    <th>Points</th>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>Auston Matthews</td>
+    <td>55</td>
+    <td>24</td>
+    <td>16</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>LW</td>
+    <td>Mitch Marner</td>
+    <td>59</td>
+    <td>13</td>
+    <td>36</td>
+    <td>49</td>
+  </tr>
+</table>
 
       </div>
       <div class="col-md-2 height2 randomColor">
@@ -72,63 +98,6 @@
       })
 
     })
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function() {
-
-    function writeToCenter(str){
-      $(".myConsole").append("<br>"+str);
-    }
-    function writeObjectToCenter(obj){
-      $(".myConsole").append("<br>"+JSON.stringify(obj) );
-    }
-    writeToCenter("<h4>testing myConsole</h4>");
-
-    function addNumbers(num1, num2){
-      var result = num1 + num2;
-
-    //return result;
-      return num1 + num2;
-    }
-
-      var firstNumber = 10;
-      var secondNumber = 15;
-
-      var thirdNumber = addNumbers(firstNumber, secondNumber);
-
-      writeToCenter("third number is "+thirdNumber);
-
-      writeToCenter("another number is "+ addNumbers(6, 9));
-
-      //declare an empty object with {}
-        var myCar = {
-          //key:value
-          "wheels":"Pirelli",
-          "brand":"Ferrari",
-          "colour":"red",
-          "price":"$250,000",
-          "doors":"2"
-        };
-
-      //add a new key value pair
-        myCar.country = "Italy";
-        myCar.seats = 2;
-        myCar.isAffordable = false;
-        myCar.options = ["sunroof", "electric", "etc"];
-
-      //writeToCenter("here's my object "+myCar);
-        writeObjectToCenter(myCar);
-
-      //loop through any key
-        for(var key in myCar){
-        writeToCenter("this key is: "+key+" and the value is "+myCar[key]);
-        }
-      //reference a key this way directly:
-        writeToCenter(" here is a value "+myCar["price"]);
-
-      //conventional way is dot notation
-        writeToCenter(" here is a value "+myCar.price);
-  })
   </script>
 </body>
 

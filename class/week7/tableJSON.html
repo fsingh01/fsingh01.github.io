@@ -7,10 +7,29 @@
     <title>Flowers</title>
 <style media="screen">
   .height1{
-    height: 75px;
+    height: 110px;
   }
   .height2{
     height:600px;
+  }
+
+  .flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  ul li{
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  ul li a, ul li a:hover{
+    text-decoration: none;
   }
 </style>
     <!-- Bootstrap -->
@@ -25,11 +44,18 @@
     <![endif]-->
   </head>
   <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 height1 randomColor">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 height1">
+        <h1>Flower Guide</h1>
+        <ul class="flexSpaceAround">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
 
-    </div>
+        </div>
   </div>
   <div class="row">
     <div class="col-md-1 randomColor">
@@ -43,7 +69,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12 height1 randomColor">
+    <div class="col-md-12 height1">
 
     </div>
   </div>

@@ -100,7 +100,7 @@
     "color":"red",
     "tones":"warm",
     "indoors":"yes",
-    "key4":"value",
+    "timeOfDay":"morning",
     "imgUrl":"img/flower1.jpg"
   },
 
@@ -108,7 +108,7 @@
     "color":"purple & blue",
     "tones":"cool",
     "indoors":"no",
-    "key4":"value",
+    "timeOfDay":"both",
     "imgUrl":"img/flower2.jpg"
   },
 
@@ -116,7 +116,7 @@
     "color":"orange",
     "tones":"warm",
     "indoors":"no",
-    "key4":"value",
+    "timeOfDay":"night",
     "imgUrl":"img/flower3.jpg"
   },
 
@@ -124,7 +124,7 @@
     "color":"yellow",
     "tones":"warm",
     "indoors":"no",
-    "key4":"value",
+    "timeOfDay":"morning",
     "imgUrl":"img/flower4.jpg"
   },
 
@@ -132,7 +132,7 @@
     "color":"peach & pink",
     "tones":"cool",
     "indoors":"yes",
-    "key4":"value",
+    "timeOfDay":"night",
     "imgUrl":"img/flower5.png"
   }
 ];
@@ -145,7 +145,7 @@ $(document).ready(function(){
     "<th>color</th>"+
     "<th>tones</th>"+
     "<th>indoors</th>"+
-    "<th>fourth key</th>"+
+    "<th>time of day</th>"+
   "</tr>";
 
 //here is the loop of the array 'cats'
@@ -156,7 +156,7 @@ for(var i=0;i<flowers.length;i++){
       "<td>"+flowers[i].color+"</td>"+
       "<td>"+flowers[i].tones+"</td>"+
       "<td>"+flowers[i].indoors+"</td>"+
-      "<td>"+flowers[i].key4+"</td>"+
+      "<td>"+flowers[i].timeOfDay+"</td>"+
     "</tr>";
 }
 html += "</table>";

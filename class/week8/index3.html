@@ -60,7 +60,7 @@
     $.getJSON(url).done(function(data) {
       console.log("success! ");
       console.dir(data);
-      //paste everything there
+
       var dataHtml = "";
       for (var i = 0; i < data.length; i++) {
         console.log("i " + i);
@@ -76,7 +76,7 @@
       $(document).ready(function() {
         $(".carousel-inner").html(dataHtml);
         //$(".carousel-inner").html("test ");
-        //we need to explicitly call this with dynamic html
+        //we need to explicitly call this with dynamic HTML
         $(".carousel").carousel();
       })
     }).fail(function(data) {

@@ -29,6 +29,29 @@
         margin-right: auto;
         display: block;
       }
+
+      ul li{
+        list-style: none;
+        text-transform: uppercase;
+      }
+
+      ul li a, ul li a:hover{
+        text-decoration: none;
+      }
+
+      nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 20px;
+      }
+
+      nav ul{
+        text-align: center;
+      }
+      
+      .height1 {
+        height: 100px;
+      }
     </style>
 </head>
 <body>
@@ -39,36 +62,36 @@
 
 <nav>
   <ul>
-   <li><a href="#">Appetizers</a></li>
-   <li><a href="#">Soups & Salads</a></li>
-   <li><a href="#">Mains</a></li>
-   <li><a href="#">Sides</a></li>
-   <li><a href="#">Beverages</a></li>
-   <li><a href="#">Desserts</a></li>
+   <li><a href="#appetizers">Appetizers</a></li>
+   <li><a href="#soupsAndSalads">Soups & Salads</a></li>
+   <li><a href="#mains">Mains</a></li>
+   <li><a href="#sides">Sides</a></li>
+   <li><a href="#beverages">Beverages</a></li>
+   <li><a href="#desserts">Desserts</a></li>
   </ul>
 </nav>
 
 <!-- Insert Appetizers PNG Mock up Here -->
-<img src="springRolls.png" alt="Appetizers - Spring Rolls">
+<img id="appetizers" src="springRolls.png" alt="Appetizers - Spring Rolls">
 
 <!-- Insert Soups and Salads PNG Mock up Here -->
-<img src="greekSalad.png" alt="Salad - Greek Salad">
+<img id="soupsAndSalads" src="greekSalad.png" alt="Salad - Greek Salad">
 
 
 <!-- Insert Mains PNG Mock up Here -->
-<img src="grilledCheese.png" alt="Main - Grilled Cheese">
+<img id="mains" src="grilledCheese.png" alt="Main - Grilled Cheese">
 
 
 <!-- Insert Sides PNG Mock up Here -->
-<img src="poutine.png" alt="Sides - Poutine">
+<img id="sides" src="poutine.png" alt="Sides - Poutine">
 
 
 <!-- Insert Beverages PNG Mock up Here -->
-<img src="sprite.png" alt="Beverages - Sprite">
+<img id="beverages" src="sprite.png" alt="Beverages - Sprite">
 
 
 <!-- Insert Desserts PNG Mock up Here -->
-<img src="strawberryCheesecake.png" alt="Desserts - Strawberry Cheesecake">
+<img id="desserts" src="strawberryCheesecake.png" alt="Desserts - Strawberry Cheesecake">
 
 
 

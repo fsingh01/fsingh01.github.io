@@ -107,7 +107,7 @@
       var arrayTopic = [{ //Change arrayTopic to whatever topic your group chose in class
           "game": "A",
           "price": 1,
-        //  "imgUrl": "http://via.placeholder.com/300x300",
+          "imgUrl": "https://images.unsplash.com/photo-1503327655231-9a047d4772b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6dcb00b105dd8ab6531e62ce2707325a&auto=format&fit=crop&w=300&q=80/300x300",
           "button": "More Info" //if u wish to do buttons
         },
 
@@ -121,20 +121,6 @@
         {
           "game": "C",
           "price": 3,
-          "imgUrl": "http://via.placeholder.com/300x300",
-          "button": "More Info" //if u wish to do buttons
-        },
-
-        {
-          "game": "D",
-          "price": 4,
-          "imgUrl": "http://via.placeholder.com/300x300",
-          "button": "More Info" //if u wish to do buttons
-        },
-
-        {
-          "game": "E",
-          "price": 5,
           "imgUrl": "http://via.placeholder.com/300x300",
           "button": "More Info" //if u wish to do buttons
         }
@@ -155,8 +141,12 @@
         for (var i = 0; i < arrayTopic.length; i++) { //change arrayTopic to whatever you
           html += "<div class='panel panel-default individualCard'>" +
           //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" + //change the red text to the keys in your Array
+
+            "<div class='cardInfo priceLabel'><img src='"+arrayTopic[i].imgUrl+"' /></div>" +
+
             "<div class='cardInfo gameLabel'>" + arrayTopic[i].game + "</div>" + //change the red text to the keys in your Array
             "<div class='cardInfo priceLabel'>" + arrayTopic[i].price + "</div>" + //change the red text to the keys in your Array
+
             "<div class='itemButton'><button type='button' class='btn btn-default'>" + arrayTopic[i].button + "</button></div>" + //Button Template
             "</div>";
         }

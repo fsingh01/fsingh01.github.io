@@ -19,6 +19,7 @@
     @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
       .height1 {
         height: 100px;
+        margin-bottom: 60px;
       }
       .height2 {
         height: 500px;
@@ -54,9 +55,18 @@
         text-align: center;
       }
 
+      body {
+        font-family: 'Press Start 2P', cursive;
+        background-image: url("pw_maze_black.png");
+        background-repeat: repeat;
+      }
+
       h1{
         text-align: center;
         font-family: 'Press Start 2P', cursive;
+        padding-top: 5px;
+        padding-bottom: 25px;
+        color: white;
       }
 
       ul li{
@@ -66,6 +76,21 @@
 
       ul li a, ul li a:hover{
         text-decoration: none;
+        color: white;
+      }
+
+      ul li a:hover{
+        color: gold;
+      }
+
+      img{
+        height: 300px;
+        width: 320px;
+      }
+
+      .footer{
+        color: white;
+        margin-top: -55px;
       }
 
     </style>
@@ -103,26 +128,26 @@
     <script>
 
 
-      //These are your Object Arrays
-      var arrayTopic = [{ //Change arrayTopic to whatever topic your group chose in class
-          "game": "A",
-          "price": 1,
-          "imgUrl": "https://images.unsplash.com/photo-1503327655231-9a047d4772b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6dcb00b105dd8ab6531e62ce2707325a&auto=format&fit=crop&w=300&q=80/300x300",
-          "button": "More Info" //if u wish to do buttons
+      //object arrays
+      var videoGames = [{
+          "game": "Virtual Reality Bundle",
+          "price": "$699.99",
+          "imgUrl": "https://images.theconversation.com/files/196589/original/file-20171127-2046-nteb74.jpg?ixlib=rb-1.1.0&rect=21%2C10%2C7012%2C3500&q=45&auto=format&w=1356&h=668&fit=crop",
+          "button": "Add To Cart"
         },
 
         {
-          "game": "B",
-          "price": 2,
-          "imgUrl": "http://via.placeholder.com/300x300",
-          "button": "More Info" //if u wish to do buttons
+          "game": "Cuphead",
+          "price": "$29.99",
+          "imgUrl": "https://i.pinimg.com/originals/d8/52/f2/d852f273422269499560774bcdccc680.png",
+          "button": "Add To Cart"
         },
 
         {
-          "game": "C",
-          "price": 3,
-          "imgUrl": "http://via.placeholder.com/300x300",
-          "button": "More Info" //if u wish to do buttons
+          "game": "PS3 Bundle",
+          "price": "$299.99",
+          "imgUrl": "https://images.unsplash.com/photo-1507457379470-08b800bebc67?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b69ccb54b9605ead6a49c6da0cbb007f&auto=format&fit=crop&w=1568&q=80",
+          "button": "Add To Cart"
         }
       ];
 
@@ -138,18 +163,21 @@
         - Be organized in a specific way (HINT: Flexbox)
  */
 
-        for (var i = 0; i < arrayTopic.length; i++) { //change arrayTopic to whatever you
+        for (var i = 0; i < videoGames.length; i++) {
           html += "<div class='panel panel-default individualCard'>" +
-          //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" + //change the red text to the keys in your Array
+          //  "<div><img class='img-responsive' src='" + arrayTopic[i].imgUrl + "' /></div>" +
 
-            "<div class='cardInfo priceLabel'><img src='"+arrayTopic[i].imgUrl+"' /></div>" +
+            "<div class='cardInfo priceLabel'><img src='"+videoGames[i].imgUrl+"' /></div>" +
 
-            "<div class='cardInfo gameLabel'>" + arrayTopic[i].game + "</div>" + //change the red text to the keys in your Array
-            "<div class='cardInfo priceLabel'>" + arrayTopic[i].price + "</div>" + //change the red text to the keys in your Array
+            "<div class='cardInfo gameLabel'>" + videoGames[i].game + "</div>" +
 
-            "<div class='itemButton'><button type='button' class='btn btn-default'>" + arrayTopic[i].button + "</button></div>" + //Button Template
+            "<div class='cardInfo priceLabel'>" + videoGames[i].price + "</div>" +
+
+
+            "<div class='itemButton'><button type='button' class='btn btn-default'>" + videoGames[i].button + "</button></div>" +
             "</div>";
         }
+
         $(".outputArray").html(html); //outputs the loop onto the html
 
       });

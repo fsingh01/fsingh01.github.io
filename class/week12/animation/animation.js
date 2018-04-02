@@ -159,11 +159,11 @@ var spriteImages = [{
     "name": "cat"
   },
   {
-    "spriteMapUrl": "images/mySprite.png",
-    "numFrames": 10,
-    "width": 1000,
-    "height": 100,
-    "name": "sprite"
+    "spriteMapUrl": "images/twitterBird.png",
+    "numFrames": 4,
+    "width": 600,
+    "height": 150,
+    "name": "Tweet"
   }
 ];
 var animations = []; //an array to hold the currently existing sprite obects

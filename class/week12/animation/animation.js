@@ -159,6 +159,55 @@ var spriteImages = [{
     "name": "cat"
   },
   {
+    "spriteMapUrl":"https://asukalap.github.io/class/week12/animation/images/heartbeat.png",
+    "numFrames": 10,
+    "width": 1000,
+    "height": 100,
+    "name": "heartbeat"
+  },
+  {
+    "spriteMapUrl":"https://julianneferr.github.io/class/week12/animation/images/lightbulb.png",
+    "numFrames": 7,
+    "width": 1000,
+    "height": 200,
+    "name": "lightbulb"
+  },
+  {
+    "spriteMapUrl":"https://biancabottos.github.io/class/week12/animation/images/sun.png",
+    "numFrames": 2,
+    "width": 500,
+    "height": 100,
+    "name": "sun"
+  },
+  {
+    "spriteMapUrl":"https://kiannagram.github.io/class/week12/animation/images/ARTZU.png",
+    "numFrames": 7,
+    "width": 2100,
+    "height": 694,
+    "name": "colour goat"
+  },
+  {
+    "spriteMapUrl": "https://katnjo.github.io/class/week12/animation/images/sprite.png",
+    "numFrames": 10,
+    "width": 1000,
+    "height": 100,
+    "name": "ball"
+  },
+  {
+    "spriteMapUrl": "https://chell-github.github.io/class/week12/images/masae.png",
+    "numFrames": 29,
+    "width": 2900,
+    "height": 100,
+    "name": "masae"
+  },
+  {
+    "spriteMapUrl":"https://alissavalentina.github.io/class/week12/animation/images/winnie2.png",
+    "numFrames": 10,
+    "width": 919 ,
+    "height": 100,
+    "name":"winnie the pooh"
+  },
+  {
     "spriteMapUrl": "images/mario.png",
     "numFrames": 7,
     "width": 420,

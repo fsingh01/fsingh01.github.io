@@ -208,6 +208,13 @@ var spriteImages = [{
     "name":"winnie the pooh"
   },
   {
+    "spriteMapUrl": "https://sluu01.github.io/class/week12/animation/images/iceCream2.png",
+    "numFrames": 5,
+    "width": 2500,
+    "height": 1259,
+    "name": "dessert"
+  },
+  {
     "spriteMapUrl": "images/mario.png",
     "numFrames": 7,
     "width": 420,

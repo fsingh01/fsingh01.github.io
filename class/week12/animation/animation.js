@@ -166,11 +166,11 @@ var spriteImages = [{
     "name": "Mario"
   },
   {
-    "spriteMapUrl": "images/blue.png",
+    "spriteMapUrl": "images/blueMan.png",
     "numFrames": 3,
     "width": 480,
     "height": 160,
-    "name": "blue"
+    "name": "blueMan"
   },
   {
     "spriteMapUrl": "images/twitterBird.png",

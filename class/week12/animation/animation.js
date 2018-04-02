@@ -114,7 +114,7 @@ function destroyAnimation(animation) {
 //create a sprite
 function spawnAnimation() {
 
-  var spriteIndex = Math.floor(Math.random() * spriteImages.length + 1) - 1; //get a random index from spriteImages
+  var spriteIndex = Math.floor(Math.random() * spriteImages.length ); //get a random index from spriteImages
   var animationImg = new Image(); //make an image object
   animationImg.src = spriteImages[spriteIndex].spriteMapUrl; //get a random sprite sheet
   var scaleRatio = Math.random() * 0.5 + 0.5; //get a random scale
@@ -157,6 +157,13 @@ var spriteImages = [{
     "width": 4800,
     "height": 200,
     "name": "cat"
+  },
+  {
+    "spriteMapUrl": "images/mySprite.png",
+    "numFrames": 10,
+    "width": 1000,
+    "height": 100,
+    "name": "sprite"
   }
 ];
 var animations = []; //an array to hold the currently existing sprite obects
